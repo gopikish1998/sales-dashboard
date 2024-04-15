@@ -189,7 +189,7 @@ function CardItem({ item, index }) {
         cursor: "pointer",
       }}
       onClick={() => {
-        naviageTo(`/cityData/${item + index}`);
+        naviageTo(`/cityData/${item?.id + index}`);
       }}
     >
       <Box
