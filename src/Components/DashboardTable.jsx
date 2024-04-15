@@ -2,9 +2,8 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { dataChart } from "../const";
 
-function DashboardTable() {
+function DashboardTable({ selectedItem }) {
   return (
     <Grid
       item
@@ -33,7 +32,7 @@ function DashboardTable() {
               Data 1
             </Typography>
           </Grid>
-          {dataChart?.map((item, index) => (
+          {selectedItem?.data?.map((item, index) => (
             <Grid
               item
               xs={1}
@@ -72,7 +71,7 @@ function DashboardTable() {
               Data 2
             </Typography>
           </Grid>
-          {dataChart?.map((item, index) => (
+          {selectedItem?.data?.map((item, index) => (
             <Grid
               item
               xs={1}
@@ -111,7 +110,7 @@ function DashboardTable() {
               Data 3
             </Typography>
           </Grid>
-          {dataChart?.map((item, index) => (
+          {selectedItem?.data?.map((item, index) => (
             <Grid
               item
               xs={1}

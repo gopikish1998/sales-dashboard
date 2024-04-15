@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import CardItem from "./CardItem";
 import ErrorOutlineOutlinedIcon from "@mui/icons-material/ErrorOutlineOutlined";
+import { cityData } from "../const";
 
 function CardContainer({ alignment }) {
   return (
@@ -74,13 +75,11 @@ function CardContainer({ alignment }) {
         }}
         overflow={"scroll"}
       >
-        {Array(7)
-          .fill(0)
-          .map((item, index) => (
-            <Box>
-              <CardItem item={item} index={index} />
-            </Box>
-          ))}
+        {cityData.map((item, index) => (
+          <Box key={item?.id}>
+            <CardItem item={item} index={index} />
+          </Box>
+        ))}
       </Box>
     </Box>
   );

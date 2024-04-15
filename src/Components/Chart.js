@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import CircularProgress from "@mui/material/CircularProgress";
 import ToggleOffOutlinedIcon from "@mui/icons-material/ToggleOffOutlined";
 import ToggleOnOutlinedIcon from "@mui/icons-material/ToggleOnOutlined";
-import { dataChart, legendData, legendDataForcast } from "../const";
+import { legendData, legendDataForcast } from "../const";
 
 function Chart({ selectedItem }) {
   const [toggle1, setToggle1] = useState(true);
