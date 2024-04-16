@@ -183,7 +183,7 @@ function CardItem({ item, index }) {
         alignItems: "center",
         height: "12rem",
         width: "13rem",
-        opacity: "0.5",
+        // opacity: "0.5",
         borderRadius: "0.75rem",
         background:
           "linear-gradient(to bottom, #28148c, #0047b1, #006ec8, #0092d5, #00b5dd, #23c2dd, #41cedb, #5edad8, #4ad5cc, #36cfbe, #21cab0, #06c4a0)",
