@@ -8,6 +8,8 @@ import * as am5 from "@amcharts/amcharts5";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import am5themes_Micro from "@amcharts/amcharts5/themes/Micro";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
+import NorthIcon from "@mui/icons-material/North";
+import SouthIcon from "@mui/icons-material/South";
 
 function CardItem({ item, index }) {
   const naviageTo = useNavigate();
@@ -219,6 +221,7 @@ function CardItem({ item, index }) {
           display={"flex"}
           flexDirection={"row"}
           justifyContent={"flex-start"}
+          alignItems={"center"}
           gap={"3rem"}
           width={"100%"}
         >
@@ -263,12 +266,14 @@ function CardItem({ item, index }) {
               }}
             ></div>
           </Tooltip>
+          <NorthIcon sx={{ color: "green" }} />
         </Box>
         <Box
           display={"flex"}
           flexDirection={"row"}
           justifyContent={"flex-start"}
           gap={"3rem"}
+          alignItems={"center"}
           width={"100%"}
         >
           <Box display={"flex"} flexDirection={"column"} gap={"0.1rem"}>
@@ -311,6 +316,7 @@ function CardItem({ item, index }) {
               }}
             ></div>
           </Tooltip>
+          <SouthIcon sx={{ color: "red" }} />
         </Box>
       </Box>
     </Box>
